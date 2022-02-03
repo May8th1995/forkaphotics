@@ -382,7 +382,18 @@ namespace PKHeX.WinForms.Controls
             };
             LoadIVs(IVs);
         }
-
+        public void SetBurn(object sender, EventArgs e)
+        {
+            Entity.SetStatus(16);
+        }
+        public void SetParalysis(object sender, EventArgs e)
+        {
+            Entity.SetStatus(64);
+        }
+        public void SetPoison(object sender, EventArgs e)
+        {
+            Entity.SetStatus(8);
+        }
         private void UpdateRandomAVs(object sender, EventArgs e)
         {
             if (Entity is not IAwakened a)
@@ -534,9 +545,6 @@ namespace PKHeX.WinForms.Controls
             Label_AVs.Visible = TB_AVTotal.Visible = BTN_RandomAVs.Visible = showAV;
             foreach (var mtb in MT_AVs)
                 mtb.Visible = showAV;
-            Label_EVs.Visible = TB_EVTotal.Visible = BTN_RandomEVs.Visible = !showAV;
-            foreach (var mtb in MT_EVs)
-                mtb.Visible = !showAV;
 
             void SetEVMaskSize(Size s, string Mask)
             {

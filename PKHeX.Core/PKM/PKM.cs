@@ -979,6 +979,11 @@ namespace PKHeX.Core
             }
             return IVs = ivs;
         }
+        public int SetStatus(int statusCond)
+        {
+            Status_Condition = statusCond;
+            return 1;
+        }
 
         public int[] SetRandomIVsGO(int minIV = 0)
         {

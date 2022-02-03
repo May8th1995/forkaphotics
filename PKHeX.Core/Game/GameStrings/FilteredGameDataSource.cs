@@ -85,7 +85,7 @@ namespace PKHeX.Core
 
         public IReadOnlyList<ComboItem> GetAbilityList(IReadOnlyList<int> abilities, int format)
         {
-            var count = format == 3 && (abilities[1] == 0 || abilities[1] == abilities[0]) ? 1 : abilities.Count;
+            var count = 2;
             var list = new ComboItem[count];
 
             var alist = Source.Strings.Ability;

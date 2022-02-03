@@ -109,7 +109,9 @@
             this.PAN_BTN = new System.Windows.Forms.Panel();
             this.BTN_RandomAVs = new System.Windows.Forms.Button();
             this.BTN_RandomIVs = new System.Windows.Forms.Button();
-            this.BTN_RandomEVs = new System.Windows.Forms.Button();
+            this.BTN_Burn = new System.Windows.Forms.Button();
+            this.BTN_Paralysis = new System.Windows.Forms.Button();
+            this.BTN_Poison = new System.Windows.Forms.Button();
             this.FLP_DynamaxLevel = new System.Windows.Forms.FlowLayoutPanel();
             this.L_DynamaxLevel = new System.Windows.Forms.Label();
             this.CB_DynamaxLevel = new System.Windows.Forms.ComboBox();
@@ -1109,7 +1111,9 @@
             this.PAN_BTN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.PAN_BTN.Controls.Add(this.BTN_RandomAVs);
             this.PAN_BTN.Controls.Add(this.BTN_RandomIVs);
-            this.PAN_BTN.Controls.Add(this.BTN_RandomEVs);
+            this.PAN_BTN.Controls.Add(this.BTN_Burn);
+            this.PAN_BTN.Controls.Add(this.BTN_Paralysis);
+            this.PAN_BTN.Controls.Add(this.BTN_Poison);
             this.PAN_BTN.Location = new System.Drawing.Point(3, 235);
             this.PAN_BTN.Name = "PAN_BTN";
             this.PAN_BTN.Size = new System.Drawing.Size(267, 31);
@@ -1129,21 +1133,41 @@
             // 
             this.BTN_RandomIVs.Location = new System.Drawing.Point(38, 3);
             this.BTN_RandomIVs.Name = "BTN_RandomIVs";
-            this.BTN_RandomIVs.Size = new System.Drawing.Size(92, 23);
+            this.BTN_RandomIVs.Size = new System.Drawing.Size(62, 23);
             this.BTN_RandomIVs.TabIndex = 104;
-            this.BTN_RandomIVs.Text = "Randomize IVs";
+            this.BTN_RandomIVs.Text = "Random IVs";
             this.BTN_RandomIVs.UseVisualStyleBackColor = true;
             this.BTN_RandomIVs.Click += new System.EventHandler(this.UpdateRandomIVs);
             // 
-            // BTN_RandomEVs
+            // BTN_Burn
             // 
-            this.BTN_RandomEVs.Location = new System.Drawing.Point(137, 3);
-            this.BTN_RandomEVs.Name = "BTN_RandomEVs";
-            this.BTN_RandomEVs.Size = new System.Drawing.Size(92, 23);
-            this.BTN_RandomEVs.TabIndex = 105;
-            this.BTN_RandomEVs.Text = "Randomize EVs";
-            this.BTN_RandomEVs.UseVisualStyleBackColor = true;
-            this.BTN_RandomEVs.Click += new System.EventHandler(this.UpdateRandomEVs);
+            this.BTN_Burn.Location = new System.Drawing.Point(110, 3);
+            this.BTN_Burn.Name = "BTN_Burn";
+            this.BTN_Burn.Size = new System.Drawing.Size(42, 23);
+            this.BTN_Burn.TabIndex = 135;
+            this.BTN_Burn.Text = "BRN";
+            this.BTN_Burn.UseVisualStyleBackColor = true;
+            this.BTN_Burn.Click += new System.EventHandler(this.SetBurn);
+            // 
+            // BTN_Paralysis
+            // 
+            this.BTN_Paralysis.Location = new System.Drawing.Point(152, 3);
+            this.BTN_Paralysis.Name = "BTN_Paralysis";
+            this.BTN_Paralysis.Size = new System.Drawing.Size(42, 23);
+            this.BTN_Paralysis.TabIndex = 135;
+            this.BTN_Paralysis.Text = "PRZ";
+            this.BTN_Paralysis.UseVisualStyleBackColor = true;
+            this.BTN_Paralysis.Click += new System.EventHandler(this.SetParalysis);
+            // 
+            // BTN_Poison
+            // 
+            this.BTN_Poison.Location = new System.Drawing.Point(194, 3);
+            this.BTN_Poison.Name = "BTN_Poison";
+            this.BTN_Poison.Size = new System.Drawing.Size(42, 23);
+            this.BTN_Poison.TabIndex = 134;
+            this.BTN_Poison.Text = "PSN";
+            this.BTN_Poison.UseVisualStyleBackColor = true;
+            this.BTN_Poison.Click += new System.EventHandler(this.SetPoison);
             // 
             // FLP_DynamaxLevel
             // 
@@ -1305,8 +1329,10 @@
         private System.Windows.Forms.FlowLayoutPanel FLP_Characteristic;
         private System.Windows.Forms.Label Label_CharacteristicPrefix;
         private System.Windows.Forms.Label L_Characteristic;
-        private System.Windows.Forms.Button BTN_RandomEVs;
         private System.Windows.Forms.Button BTN_RandomIVs;
+        private System.Windows.Forms.Button BTN_Burn;
+        private System.Windows.Forms.Button BTN_Paralysis;
+        private System.Windows.Forms.Button BTN_Poison;
         private System.Windows.Forms.Panel PAN_BTN;
         private System.Windows.Forms.Label Label_Base;
         private System.Windows.Forms.MaskedTextBox TB_BaseHP;

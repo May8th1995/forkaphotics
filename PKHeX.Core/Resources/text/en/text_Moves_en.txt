@@ -30,7 +30,7 @@ Sand Attack
 Headbutt
 Horn Attack
 Fury Attack
-Horn Drill
+Drill Run
 Tackle
 Body Slam
 Wrap
@@ -88,7 +88,7 @@ Thunder Wave
 Thunder
 Rock Throw
 Earthquake
-Fissure
+Earth Power
 Dig
 Toxic
 Confusion
@@ -122,13 +122,13 @@ Self-Destruct
 Egg Bomb
 Lick
 Smog
-Sludge
+Sludge Bomb
 Bone Club
 Fire Blast
 Waterfall
 Clamp
 Swift
-Skull Bash
+Head Smash
 Spike Cannon
 Constrict
 Amnesia
@@ -186,7 +186,7 @@ Scary Face
 Feint Attack
 Sweet Kiss
 Belly Drum
-Sludge Bomb
+Gunk Shot
 Mud-Slap
 Octazooka
 Spikes
@@ -207,8 +207,8 @@ Rollout
 False Swipe
 Swagger
 Milk Drink
-Spark
-Fury Cutter
+Wild Charge
+X-scissors
 Steel Wing
 Mean Look
 Attract
@@ -244,7 +244,7 @@ Crunch
 Mirror Coat
 Psych Up
 Extreme Speed
-Ancient Power
+Ancientpower
 Shadow Ball
 Future Sight
 Rock Smash
@@ -282,7 +282,7 @@ Brick Break
 Yawn
 Knock Off
 Endeavor
-Eruption
+Draco Meteor
 Skill Swap
 Imprison
 Refresh
@@ -290,7 +290,7 @@ Grudge
 Snatch
 Secret Power
 Dive
-Arm Thrust
+Force Palm
 Camouflage
 Tail Glow
 Luster Purge
@@ -308,16 +308,16 @@ Crush Claw
 Blast Burn
 Hydro Cannon
 Meteor Mash
-Astonish
+Shadow Sneak
 Weather Ball
 Aromatherapy
 Fake Tears
-Air Cutter
+Air Slash
 Overheat
 Odor Sleuth
 Rock Tomb
 Silver Wind
-Metal Sound
+Flash Cannon
 Grass Whistle
 Tickle
 Cosmic Power
@@ -331,7 +331,7 @@ Sheer Cold
 Muddy Water
 Bullet Seed
 Aerial Ace
-Icicle Spear
+Ice Shard
 Iron Defense
 Block
 Howl
