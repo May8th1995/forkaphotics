@@ -1,3 +1,6 @@
+EKheX
+====
+This is a fork of PKHeX that supports the rom hack Emerald Kaizo, supports changed pokemon stats, new added items, and adds new functionality to status pokemon with in the save editor.
 PKHeX
 =====
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
